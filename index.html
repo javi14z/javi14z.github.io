@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pestañas sencillas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Demo</p>
+      <h1>Tabs minimalistas</h1>
+      <p class="lede">Un ejemplo rápido de una página con varias pestañas y contenido alternado usando solo HTML, CSS y JavaScript.</p>
+    </header>
+
+    <section class="card">
+      <nav class="tabs" aria-label="Navegación de pestañas">
+        <button class="tab is-active" data-target="inicio" aria-selected="true">Inicio</button>
+        <button class="tab" data-target="servicios" aria-selected="false">Servicios</button>
+        <button class="tab" data-target="portafolio" aria-selected="false">Portafolio</button>
+        <button class="tab" data-target="contacto" aria-selected="false">Contacto</button>
+        <span class="tab-indicator" aria-hidden="true"></span>
+      </nav>
+
+      <div class="panels">
+        <article class="panel is-active" id="inicio" role="tabpanel" tabindex="0">
+          <h2>Bienvenido</h2>
+          <p>Esta maqueta muestra cómo alternar secciones dentro de un mismo contenedor. Puedes extenderla con tu propio contenido, imágenes o formularios.</p>
+          <ul>
+            <li>Diseño limpio con fondo degradado.</li>
+            <li>Pestañas accesibles con foco visible.</li>
+            <li>Transiciones suaves para el indicador.</li>
+          </ul>
+        </article>
+
+        <article class="panel" id="servicios" role="tabpanel" tabindex="0">
+          <h2>Servicios</h2>
+          <p>Describe qué ofreces: desarrollo web, branding, consultoría o cualquier combinación.</p>
+          <div class="pill-grid">
+            <span class="pill">Landing pages</span>
+            <span class="pill">eCommerce</span>
+            <span class="pill">UI rápida</span>
+            <span class="pill">Automatización</span>
+          </div>
+        </article>
+
+        <article class="panel" id="portafolio" role="tabpanel" tabindex="0">
+          <h2>Portafolio</h2>
+          <p>Muestra 3-4 proyectos destacados. Cada tarjeta puede enlazar a tu demo o repositorio.</p>
+          <div class="grid">
+            <div class="card-mini">
+              <p class="tag">Web</p>
+              <h3>Landing interactiva</h3>
+              <p>Hero con animaciones y métricas en vivo.</p>
+            </div>
+            <div class="card-mini">
+              <p class="tag">Dashboard</p>
+              <h3>Panel de datos</h3>
+              <p>Gráficas ligeras y filtros instantáneos.</p>
+            </div>
+            <div class="card-mini">
+              <p class="tag">App</p>
+              <h3>Gestor móvil</h3>
+              <p>UI nativa con sincronización offline.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel" id="contacto" role="tabpanel" tabindex="0">
+          <h2>Contacto</h2>
+          <p>Incluye un pequeño formulario o links directos.</p>
+          <form class="contact-form">
+            <label>
+              Nombre
+              <input type="text" placeholder="Tu nombre" required>
+            </label>
+            <label>
+              Correo
+              <input type="email" placeholder="tu@email.com" required>
+            </label>
+            <label>
+              Mensaje
+              <textarea rows="3" placeholder="Cuéntame qué necesitas" required></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p>Personaliza colores, tipografías y contenido a tu gusto. ¡Listo para iterar!</p>
+    </footer>
+  </div>
+</body>
+</html>
