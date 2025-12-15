@@ -172,6 +172,20 @@ h1 {
   margin: 0;
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 180ms ease;
+}
+
+.project-link:hover {
+  transform: translateX(4px);
+}
+
 .tag {
   display: inline-block;
   padding: 4px 8px;
