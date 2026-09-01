@@ -34,6 +34,25 @@ body {
   margin-bottom: 18px;
 }
 
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #0c1018;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(94, 240, 196, 0.25);
+  transition: filter 180ms ease;
+}
+
+.cv-link:hover {
+  filter: brightness(1.05);
+}
+
 .eyebrow {
   display: inline-flex;
   padding: 6px 10px;
@@ -71,7 +90,7 @@ h1 {
 .tabs {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 4px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--stroke);
@@ -106,7 +125,7 @@ h1 {
   position: absolute;
   top: 4px;
   left: 4px;
-  width: calc(25% - 8px);
+  width: calc(20% - 8px);
   height: calc(100% - 8px);
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   border-radius: 10px;
@@ -268,6 +287,16 @@ h1 {
 }
 
 @media (max-width: 720px) {
+  .tabs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tab-indicator {
+    width: calc(33.333% - 8px);
+  }
+}
+
+@media (max-width: 480px) {
   .tabs {
     grid-template-columns: repeat(2, 1fr);
   }
